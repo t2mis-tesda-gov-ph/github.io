@@ -133,13 +133,5 @@ code {
     width: 100%;
     text-align: left;
   }
-  body {
-  min-width: 1200px;
-  overflow-x: auto;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
+ 
 }
