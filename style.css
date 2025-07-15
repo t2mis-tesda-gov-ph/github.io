@@ -1,0 +1,136 @@
+/* General Body Styling */
+body {
+  background-color: #f5f9fc;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Profile Card Container */
+.profile-card {
+  border: 1px solid #cce0f5;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: white;
+  margin: 30px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Header with Name and Icon */
+.profile-header {
+  background-color: #cce9f2;
+  color: #004c70;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #004c70;
+}
+
+.profile-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #004c70;
+}
+
+/* Profile Detail Body */
+.profile-body {
+  padding: 20px;
+}
+
+.profile-body .row {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Top border only on the first row */
+.profile-body .row:first-child {
+  border-top: 1px solid #ddd;
+}
+
+/* No bottom border on the last row */
+.profile-body .row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: bold;
+  text-align: left;
+  width: 40%;
+}
+
+.value {
+  text-align: center;
+  font-weight: normal;
+  width: 60%;
+}
+
+/* Tabs Navigation */
+.nav-tabs .nav-link.active {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #007bff;
+}
+
+.nav-tabs .nav-link {
+  color: #007bff;
+}
+
+/* Tabs Content Container */
+.tab-content {
+  margin-top: 15px;
+}
+
+/* Table Styling */
+.table {
+  background-color: white;
+}
+
+.table thead th {
+  background-color: #f0f0f0;
+}
+
+.table td,
+.table th {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* Result Badge (e.g., Competent) */
+code {
+  background-color: #fee;
+  color: red;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* Mobile Responsive Tweaks */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-icon {
+    margin-bottom: 5px;
+  }
+
+  .profile-body .row {
+    flex-direction: column;
+  }
+
+  .label,
+  .value {
+    width: 100%;
+    text-align: left;
+  }
+}

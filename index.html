@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile - Training Management Info System</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Your custom CSS -->
+<link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f5f9fc;
+    }
+
+    .profile-card {
+      border: 1px solid #cce0f5;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 100%;
+      background-color: white;
+      margin: 30px auto;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .profile-header {
+      background-color: #cce9f2;
+      color: #004c70;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile-header h2 {
+      margin: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+
+    .profile-header .profile-icon {
+      font-size: 30px;
+      display: block;
+      color: #004c70;
+      margin-bottom: 5px;
+    }
+
+    .profile-body {
+      padding: 20px;
+    }
+
+    .profile-body .row {
+      margin-bottom: 10px;
+    }
+
+    .label {
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .value {
+      text-align: center;
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: #f8f9fa;
+      border-bottom: 2px solid #007bff;
+    }
+
+    .table thead th {
+      background-color: #f0f0f0;
+    }
+
+    code {
+      background-color: #fee;
+      color: red;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 2px 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-header d-flex align-items-center px-3">
+  <i class="fa fa-user profile-icon me-2" aria-hidden="true"></i>
+  <h2 class="mb-0">MARIE ABIGAIL BRION BUNQUIN</h2>
+</div>
+
+      <div class="profile-body">
+        <div class="row">
+          <div class="col-4 label">Date of Birth:</div>
+          <div class="col-8 value">11/03/1991</div>
+        </div>
+        <div class="row">
+          <div class="col-4 label">Sex:</div>
+          <div class="col-8 value">Female</div>
+        </div>
+        <div class="row">
+          <div class="col-4 label">Nationality:</div>
+          <div class="col-8 value">FILIPINO</div>
+        </div>
+        <div class="row">
+          <div class="col-4 label">Birthplace:</div>
+          <div class="col-8 value">San Pablo City, Laguna</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-3" id="profileTabs" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#training" type="button">Training</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#assessment" type="button">Assessment</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#renewal" type="button">Renewal</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- Training Tab -->
+      <div class="tab-pane fade show active" id="training">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>Province</th>
+              <th>School</th>
+              <th>Qualification</th>
+              <th>Schedule</th>
+              <th>Trainor</th>
+              <th>Type of Scholarship</th>
+              <th>Training Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Region IVA - CALABARZON</td>
+              <td>Laguna</td>
+              <td>THE BIG FIVE TRAINING AND ASSESSMENT CENTER INC.</td>
+              <td>Bread and Pastry Production Bread and Pastry Production NC II</td>
+              <td>07/18/2025</td>
+              <td>Magnolia Magkawas Mauhay</td>
+              <td>Special Training for Employment Program (STEP)</td>
+              <td>Completed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Assessment Tab -->
+      <div class="tab-pane fade" id="assessment">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>Province</th>
+              <th>Assessment Center</th>
+              <th>Qualification</th>
+              <th>Schedule</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Region IVA - CALABARZON</td>
+              <td>Laguna</td>
+              <td>CRUZEDAL TRAINING & ASSESSMENT CENTER INC.</td>
+              <td>Bread and Pastry Production NC II</td>
+              <td>07/18/2025</td>
+              <td><code>Competent</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Renewal Tab -->
+      <div class="tab-pane fade" id="renewal">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>Province</th>
+              <th>Qualification</th>
+              <th>Valid Until</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Region IVA - CALABARZON</td>
+              <td>Laguna</td>
+              <td>Bread and Pastry Production NC II</td>
+              <td>07/17/2030</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
